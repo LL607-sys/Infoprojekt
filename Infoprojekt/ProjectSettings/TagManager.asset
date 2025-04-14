@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - enemy
+  - Collectable
+  - floor
+  - door
+  - Effect
+  - forest
+  - graveyard
+  - castle
+  - sword
+  - attack
+  - storyone
+  - LazyLake
+  - StartMap
+  - TundraLake
+  - BearHit
+  - HausUnten
+  - "HausGro\xDF"
+  - HausBerg
+  - HausGrau
+  - HausBerg2
+  - arrow
+  - storytwo
+  - Teleport
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Environment
+  - Water
+  - UI
+  - EnemyProjectile
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
