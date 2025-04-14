@@ -66,6 +66,7 @@ namespace Entities.Npc.Enemy.Bear
         private bool _isMoving;
         private bool _isSitting;
         private bool _isSleeping;
+        private bool hasPlayedAudio;
 
         private float _lastActionTime;
 
@@ -126,6 +127,11 @@ namespace Entities.Npc.Enemy.Bear
             // if player is in range for activation
             if (IsInRange(player, activationRange))
             {
+                if(!hasPlayedAudio){
+                    audiSource.clip = audiClip;
+                    audiSource.Play();
+                    hasPlayedAudio = true;
+                }
                 _agent.speed = 3f;
                 if (_isAttacking)
                 {
@@ -152,6 +158,8 @@ namespace Entities.Npc.Enemy.Bear
             // randomly chooses normal behaviour after a cooldown 
             else
             {
+                hasPlayedAudio = false;
+
                 _agent.speed = 2f;
                 _isAttacking = false;
 
@@ -324,6 +332,7 @@ namespace Entities.Npc.Enemy.Bear
         public void Die()
         {
             if (isDead) return;
+            audiSource.Stop();
             isDead = true;
             SetAnimation(Death);
             _agent.isStopped = true;
