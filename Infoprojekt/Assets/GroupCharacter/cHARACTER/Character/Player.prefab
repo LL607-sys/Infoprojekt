@@ -202,7 +202,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8ba7261b4e796fc4cbbecea0e1f51984, type: 3}
       propertyPath: m_Name
-      value: Erika Archer With Bow Arrow
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8ba7261b4e796fc4cbbecea0e1f51984, type: 3}
       propertyPath: m_Layer
@@ -424,12 +424,6 @@ PrefabInstance:
       addedObject: {fileID: 7172733516984980290}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8ba7261b4e796fc4cbbecea0e1f51984, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2525056681901879567}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8ba7261b4e796fc4cbbecea0e1f51984, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3790220825371014032}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8ba7261b4e796fc4cbbecea0e1f51984, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2996074633259993781}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8ba7261b4e796fc4cbbecea0e1f51984, type: 3}
       insertIndex: -1
@@ -487,7 +481,7 @@ MonoBehaviour:
   charact: {fileID: 3777065941882092056}
   cam: {fileID: 0}
   haus: 1
-  cineCam: {fileID: 0}
+  sceneName: 
   jumpPressed: 0
   sneakPressed: 0
   walkpace: 0
@@ -498,42 +492,33 @@ MonoBehaviour:
   attackBowPressed: 0
   rotein: 0
   characterMesh: {fileID: 5265274998037363855}
-  Arrow: {fileID: 4177985856394428905, guid: 6b0aaaf41533ff645b4ba102e5b10c9d, type: 3}
-  RefPoint: {fileID: 1063093291156600085}
---- !u!114 &2525056681901879567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4781084589469951541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01ae66b930e196e4baed624c6ce1cc56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HealtBar: {fileID: 0}
-  TextHealth: {fileID: 0}
-  Health: 100
-  animationn: 0
-  Panel: {fileID: 0}
-  dead: 0
---- !u!114 &3790220825371014032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4781084589469951541}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6042dfbcc657054ba19461b714689d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Zombie: {fileID: 157916354670381428, guid: e1908147d75ad71499845e94e7f8df9c, type: 3}
-  x: -14
-  y: 4
-  z: 40
+  arrow: {fileID: 4177985856394428905, guid: 6b0aaaf41533ff645b4ba102e5b10c9d, type: 3}
+  refPoint: {fileID: 1063093291156600085}
+  acceleration: 4
+  deceleration: 2
+  forwardPressed: 0
+  leftPressed: 0
+  rightPressed: 0
+  turnSmoothTime: 0
+  rotationSpeed: 5
+  pickUpPressed: 0
+  rota: 0
+  sword: {fileID: 0}
+  bow: {fileID: 0}
+  book1: 0
+  book2: 0
+  book3: 0
+  price1: 0
+  price2: 0
+  price3: 0
+  panelDings: {fileID: 0}
+  panelNormal: {fileID: 0}
+  sceneonefinished: 0
+  storeone: {fileID: 0}
+  storetwo: {fileID: 0}
+  playableDirector: {fileID: 0}
+  cammm: {fileID: 0}
+  texte: {fileID: 0}
 --- !u!114 &2996074633259993781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -614,8 +599,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 0}
-  Inventoryman: {fileID: 0}
-  ItemContent: {fileID: 0}
+  inventoryman: {fileID: 0}
+  itemContent: {fileID: 0}
+  player: {fileID: 0}
 --- !u!4 &5265274998037363855 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8ba7261b4e796fc4cbbecea0e1f51984, type: 3}
