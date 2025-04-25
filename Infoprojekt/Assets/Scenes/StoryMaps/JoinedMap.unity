@@ -11925,9 +11925,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 523676580}
     m_Modifications:
+    - target: {fileID: 1794133668485820349, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
+      propertyPath: Head
+      value: 
+      objectReference: {fileID: 1358229476}
     - target: {fileID: 2594523774265922151, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
       propertyPath: m_Name
       value: VillagerHausBerg2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594523774265922151, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4650968838992395047, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18782,6 +18790,25 @@ MonoBehaviour:
   animation2: {fileID: 7478731271839673279, guid: 4d3c8045dd8857a4b8d34c2361c61045, type: 3}
   animation3: {fileID: 7986504087968017091, guid: 12a56ee4630040c4eb17ae9707ed4cef, type: 3}
   playerEffect: 0
+--- !u!114 &487192805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487192795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85264109ab6292e4a80f413b211134be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactionPoint: {fileID: 1620992048}
+  _interactionPointRadius: 0.5
+  _interactableMask:
+    serializedVersion: 2
+    m_Bits: 256
+  _interactionPromptUI: {fileID: 1790412083}
+  _numFound: 0
 --- !u!4 &487328825 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7023807086616689974, guid: a9ec8e5001487a349b9ab55376dfbfd1, type: 3}
@@ -27581,9 +27608,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 523676580}
     m_Modifications:
+    - target: {fileID: 1794133668485820349, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
+      propertyPath: Head
+      value: 
+      objectReference: {fileID: 1358229476}
     - target: {fileID: 2594523774265922151, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
       propertyPath: m_Name
       value: Villager HausBerg
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594523774265922151, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4650968838992395047, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29443,7 +29478,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 736508510}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2561983, y: 0.18148215, z: -0.04903712, w: 0.94816774}
+  m_LocalRotation: {x: 0.25620404, y: 0.18137142, z: -0.049007207, w: 0.9481889}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -36227,7 +36262,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968103245}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.03155638, y: 0.24134082, z: 0.00785223, w: 0.9698954}
+  m_LocalRotation: {x: -0.031557497, y: 0.24120413, z: 0.007847787, w: 0.96992946}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -52980,6 +53015,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356612469}
   m_Mesh: {fileID: 674340280032488212, guid: 3a2382e055a8c86428ae93eda9c1e353, type: 3}
+--- !u!1 &1358229476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1358229477}
+  m_Layer: 8
+  m_Name: Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1358229477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358229476}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.653, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 487192796}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1359174394 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4894849518924494139, guid: dc53baa962b6d244cb9e81ec33c0865a, type: 3}
@@ -55697,9 +55763,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 523676580}
     m_Modifications:
+    - target: {fileID: 1794133668485820349, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
+      propertyPath: Head
+      value: 
+      objectReference: {fileID: 1358229476}
     - target: {fileID: 2594523774265922151, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
       propertyPath: m_Name
       value: "VillagerHausGro\xDF"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594523774265922151, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4650968838992395047, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58233,6 +58307,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5265274998037363855, guid: 2728afc64ab11fb4ab2be12bc9834fb7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1522641184}
+    - targetCorrespondingSourceObject: {fileID: 5265274998037363855, guid: 2728afc64ab11fb4ab2be12bc9834fb7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1620992048}
+    - targetCorrespondingSourceObject: {fileID: 5265274998037363855, guid: 2728afc64ab11fb4ab2be12bc9834fb7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1358229477}
     - targetCorrespondingSourceObject: {fileID: 6281701252981433516, guid: 2728afc64ab11fb4ab2be12bc9834fb7, type: 3}
       insertIndex: 0
       addedObject: {fileID: 1140234431}
@@ -58243,6 +58323,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4781084589469951541, guid: 2728afc64ab11fb4ab2be12bc9834fb7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 487192797}
+    - targetCorrespondingSourceObject: {fileID: 4781084589469951541, guid: 2728afc64ab11fb4ab2be12bc9834fb7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 487192805}
   m_SourcePrefab: {fileID: 100100000, guid: 2728afc64ab11fb4ab2be12bc9834fb7, type: 3}
 --- !u!1001 &1511048913
 PrefabInstance:
@@ -62392,6 +62475,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618442737}
   m_Mesh: {fileID: -5495902117074765545, guid: a7b61680b3a0de442a8a2e77459b2475, type: 3}
+--- !u!1 &1620992047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1620992048}
+  m_Layer: 8
+  m_Name: InteractionPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1620992048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620992047}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.457, z: 0.56}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 487192796}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1621271557
 GameObject:
   m_ObjectHideFlags: 0
@@ -68059,7 +68173,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770432348}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2723833, y: 0.19805405, z: -0.057400174, w: 0.93983364}
+  m_LocalRotation: {x: 0.27239048, y: 0.19793592, z: -0.05736594, w: 0.9398585}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -69159,6 +69273,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789896048}
   m_Mesh: {fileID: 8733429697405204941, guid: 410395e08c5de394fa5cc1abf2c678a1, type: 3}
+--- !u!114 &1790412083 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1794133668485820349, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
+  m_PrefabInstance: {fileID: 1805006721}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94fda85fd7317cb4ea4634d2e8791ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1790549027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74559,7 +74684,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1906348857}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2561983, y: 0.18148215, z: -0.04903712, w: 0.94816774}
+  m_LocalRotation: {x: 0.25620404, y: 0.18137139, z: -0.0490072, w: 0.9481889}
   m_LocalPosition: {x: 862.97, y: 82.95, z: -202.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -80991,9 +81116,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 523676580}
     m_Modifications:
+    - target: {fileID: 1794133668485820349, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
+      propertyPath: Head
+      value: 
+      objectReference: {fileID: 1358229476}
     - target: {fileID: 2594523774265922151, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
       propertyPath: m_Name
       value: VillagerHausGrau
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594523774265922151, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4650968838992395047, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -87829,9 +87962,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 523676580}
     m_Modifications:
+    - target: {fileID: 1794133668485820349, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
+      propertyPath: Head
+      value: 
+      objectReference: {fileID: 1358229476}
     - target: {fileID: 2594523774265922151, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
       propertyPath: m_Name
       value: VillagerHausUnten
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594523774265922151, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4650968838992395047, guid: 584d3869d909b57428bcc1f805dc06d8, type: 3}
       propertyPath: m_LocalPosition.x
