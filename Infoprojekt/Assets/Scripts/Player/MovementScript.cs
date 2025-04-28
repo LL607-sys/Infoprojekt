@@ -1,18 +1,19 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class MovementScript : MonoBehaviour
 {
-    // ctrl c ctrl v from https://www.youtube.com/watch?v=f473C43s8nE
-    [Header("Movement")] public float moveSpeed = 5;
+    [Header("Movement")] public float moveSpeed = 30;
 
-    public float groundDrag;
+    public float groundDrag = 5;
 
-    public float jumpForce;
-    public float jumpCooldown;
-    public float airMultiplier;
+    public float jumpForce = 100;
+    public float jumpCooldown = 0;
+    public float airMultiplier = 1;
 
-    public float walkSpeed;
-    public float sprintSpeed;
+    public float walkSpeed = 30;
+    public float sprintSpeed = 65;
 
     [Header("Keybinds")] public KeyCode jumpKey = KeyCode.Space;
 
