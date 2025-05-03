@@ -9,7 +9,7 @@ namespace Terrain.See.Scripts
     {
         [FormerlySerializedAs("Canvas")] public GameObject canvas;
         public GameObject canvas2;
-        [FormerlySerializedAs("PlayerCanvas")] public GameObject playerCanvas;
+        //[FormerlySerializedAs("PlayerCanvas")] public GameObject playerCanvas;
 
         [FormerlySerializedAs("togglemanager")]
         public ToggleManager toggleManager;
@@ -21,9 +21,9 @@ namespace Terrain.See.Scripts
         [FormerlySerializedAs("TundraLake")] public GameObject tundraLake;
 
         [FormerlySerializedAs("ToggleGroup")] public ToggleGroup toggleGroup;
-        [FormerlySerializedAs("TeleportText")] public Text teleportText;
+        //[FormerlySerializedAs("TeleportText")] public Text teleportText;
 
-        private bool _enter;
+        public bool _enter;
 
         private bool _showGUI;
 
@@ -47,11 +47,6 @@ namespace Terrain.See.Scripts
 
         private void Update()
         {
-            if (teleportText && _enter)
-                teleportText.gameObject.SetActive(true);
-            else
-                teleportText.gameObject.SetActive(false);
-
             if (Input.GetKeyDown(KeyCode.F) && _enter && canvas) OpenCanvas();
         }
 
@@ -69,7 +64,7 @@ namespace Terrain.See.Scripts
         {
             canvas.SetActive(true);
             canvas2.SetActive(true);
-            playerCanvas.SetActive(false);
+            //playerCanvas.SetActive(false);
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             Time.timeScale = 0.0f;
@@ -100,11 +95,17 @@ namespace Terrain.See.Scripts
             tundraLake.SetActive(activeLocation == tundraLake);
         }
 
+        private void OnGUI()
+        {
+            if (_enter)
+                GUI.Label(new Rect(Screen.width / 2 - 75, Screen.height - 100, 155, 30),
+                    "Press 'F' to Teleport");
+        }
 
         public void Cancel()
         {
             canvas.SetActive(false);
-            playerCanvas.SetActive(true);
+            //playerCanvas.SetActive(true);
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
             Time.timeScale = 1f;
